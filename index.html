@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upward Consulting - Expertise et Formation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="fixed-header">
+        <div class="logo">Upward Consulting</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#cabinet">Notre Cabinet</a></li>
+                <li><a href="#valeurs">Nos Valeurs</a></li>
+                <li><a href="#metiers">Nos Métiers</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#client">Espace Client</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h1>Bienvenue chez Upward Consulting</h1>
+        <p>Votre partenaire en expertise comptable et formation professionnelle.</p>
+    </section>
+
+    <section id="cabinet">
+        <h2>Notre Cabinet</h2>
+        <p>Présentation du cabinet, son équipe et ses domaines d'expertise.</p>
+    </section>
+
+    <section id="valeurs">
+        <h2>Nos Valeurs</h2>
+        <p>Transparence, engagement et accompagnement personnalisé.</p>
+    </section>
+
+    <section id="metiers">
+        <h2>Nos Métiers</h2>
+        <div class="service">
+            <h3>Comptabilité</h3>
+            <p>Gestion complète des comptes pour entreprises et indépendants.</p>
+        </div>
+        <div class="service">
+            <h3>Audit</h3>
+            <p>Évaluation financière et audit de conformité.</p>
+        </div>
+        <div class="service">
+            <h3>Fiscalité</h3>
+            <p>Optimisation fiscale et déclarations réglementaires.</p>
+        </div>
+    </section>
+
+    <section id="formations">
+        <h2>Nos Formations</h2>
+        <p>Des formations adaptées aux professionnels de la comptabilité et de la gestion.</p>
+    </section>
+
+    <section id="client">
+        <h2>Espace Client</h2>
+        <p>Accédez à vos documents comptables et formations en toute sécurité.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="process.php" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="maps">
+        <h2>Notre Localisation</h2>
+        <div class="map-container">
+            <iframe src="YOUR_GOOGLE_MAPS_EMBED_LINK" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Upward Consulting | Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+  
