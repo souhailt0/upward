@@ -1,15 +1,10 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let formData = new FormData(this);
-
-    fetch("process.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert("Merci pour votre message !");
-    })
-    .catch(error => console.error("Erreur:", error));
+// Simple success message (no backend here, but gives feedback)
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // prevent actual submission unless backend is hooked
+        alert("Merci pour votre message ! Nous vous contacterons bientôt.");
+        form.reset();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
